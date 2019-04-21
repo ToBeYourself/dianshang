@@ -1,2 +1,48 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}'>
+  <block wx:for="{{imageUrls}}" > 
+    <swiper-item>
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="111">
+
+<view class="nav">
+  <block wx:for-items="{{navItems}}" wx:key="name" class="nav-block">
+    <view class="nav-item" catchtap='catchTapCategory' data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+      <image src="{{item.imageurl}}" class="nav-image"></image>
+      <text>{{item.name}}</text>
+    </view>
+  
+  </block>
+
+</view>
+</view>
+<view class="separate"></view>
+
+<view class="cate-container">
+  <view class="category-title" >
+    
+     <text class="name">新品上架</text>
+
+   
+    <view class="line-flag"></view>
+  
+    <image class="head-img" src="{{newgoods_head_url}}"></image>
+
+  </view>
+
+
+  <scroll-view class="scroll-box" scroll-x >
+    <view class="goods">
+      <block wx:for-items="{{goodsItems}}" wx:key="name" class="goods-block">
+          <view class="goods-item" catchtap='catchTapCategory' data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+            <image src="{{item.imageurl}}" class="goods-image"></image>
+            <text >{{item.name}}</text>
+            <p> {{item.newprice}}</p>
+           </view>      
+      </block>
+    </view>
+  </scroll-view>
+
+</view>

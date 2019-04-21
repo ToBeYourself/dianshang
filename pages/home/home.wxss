@@ -3,3 +3,91 @@ page{
   flex-direction: column;
   height: 100%
 }
+swiper{
+  height: 300rpx;
+
+}
+swiper-item image{
+  width:100%;
+  height:100%;
+}
+.nav{
+  display: flex;
+
+}
+.nav-block{
+  display: block;
+}
+.nav-item{
+    width:25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20rpx;
+}
+.nav-item .nav-image{
+  width:80rpx;
+  height: 80rpx;
+}
+.nav-item text{
+  padding-top:20rpx;
+  font-size: 25rpx;
+}
+.category-title{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 0rpx;
+}
+.category-title .name{
+  font-size: 40rpx;
+  text-align: center;
+  margin:10rpx auto;
+}
+.line-flag{
+  width:100%;
+  height: 2rpx;
+  display: block;
+  margin: 20rpx 0rpx;
+  background-color: gainsboro;
+  text-align: center;
+}
+image .head-img{
+  width:100%;
+  height: 600rpx;
+
+}
+text{
+  color: #444;
+  font-size: 40rpx;
+
+}
+p{
+  color: red;
+  font-size: 30rpx;
+  margin-top:20rpx;
+}
+.cate-container{
+  color: #fff;
+
+}
+.separate{
+  height: 15rpx;
+  background-color: #f2f2f2;
+  display: block;
+}
+.scroll-box{
+  width: 120%;
+  white-space: nowrap;
+}
+.goods{
+  display: flex;
+  overflow: scroll;
+}
+.goods .goods-block{
+  flex-direction: column;
+  display:inline-table;
+}
+.goods .goods-image{
+  display: block;
+}
+

@@ -15,8 +15,8 @@ Page({
    
   },
   onLoad: function () {
-    wx.switchTab({
-      url: '../home/home',
+    wx.navigateTo({
+      url: '../detail/detail',
     })
     if (app.globalData.userInfo) {
       this.setData({

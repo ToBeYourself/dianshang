@@ -1,0 +1,34 @@
+<!--pages/detail/detail.wxml-->
+<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}'   duration='{{duration}}'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item >
+      <image src="{{item}}" data-src="item" bindtap="previewImage"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<scroll-view scroll-y>
+  <view class="detail">
+    <text class="title">兰蔻x小黑瓶精华</text>
+    <text class="price">￥500</text>
+  </view>
+  <view class="separate"></view>
+
+  <text bindtap='toggleDialog'>请选择购买数量</text>
+  <view class="separate"></view>
+
+  <text>商品评价</text>
+  <text class="text-remark">东西还可以，好评</text>
+  <view class="separate"></view>
+  <view >商品详情</view>
+  <block  wx:for-items="{{detailImg}}" wx:key="name">
+    <image class="image_detail" src="{{item}}"></image>
+  </block>
+  <view class="temp"></view>
+</scroll-view>
+<view class="detail-nav">
+  <image bindtap='toCar' src="../../image/tabbar/cart.png"></image>
+  <view class="line_nav"></view>
+  <image bindtap='addLike' src="{{isLike?'../../image/tabbar/home.png':'../../image/tabbar/home_select.png'}}"></image>
+  <button class='button-green'></button>
+</view>

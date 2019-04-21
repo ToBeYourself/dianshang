@@ -5,7 +5,8 @@
     "pages/home/home",
     "pages/classify/classify",
     "pages/cart/cart",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -41,5 +42,6 @@
                 }
                 ]
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "backgroundColor": "#f0145a"
 }
